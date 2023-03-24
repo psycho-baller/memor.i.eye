@@ -21,7 +21,7 @@ const ImageFocus = () => {
 
   const { pid } = router.query as { pid: string };
   let _data: Props[] = images;
-    
+
   const id: number = parseInt(pid);
   for (let i = 0; i < _data.length; i++) {
     if (_data[i].id === id) {
@@ -61,7 +61,7 @@ const ImageFocus = () => {
               >
                 <h1 className="text-4xl">UWaterloo📍</h1>
                 <h1 className="text-xl mb-4">200 University Ave W</h1>
-                <Image src="/map.svg" height={140} width={140} />
+                <Image src="/map.svg" alt="map" height={140} width={140} />
               </GridItem>
               <GridItem
                 className="text-white align-middle text-center justify-content-center"

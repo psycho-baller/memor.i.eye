@@ -22,8 +22,8 @@ interface Props {
 function Main(props: any) {
   const data = props.data as Props[];
   const datesD = {} as { [key: string]: Props[] };
-    const datesM = {} as { [key: string]: Props[] };
-    const datesY = {} as { [key: string]: Props[] };
+  const datesM = {} as { [key: string]: Props[] };
+  const datesY = {} as { [key: string]: Props[] };
   data.map((image) => {
     const date = new Date(image.time);
     if (isToday(date)) {
@@ -35,29 +35,28 @@ function Main(props: any) {
         datesD[day] = [];
       }
       datesD[day].push(image);
-    } 
+    }
 
     if (isThisMonth(date)) {
       datesM["This Month"] = datesM["This Month"] || [];
       datesM["This Month"].push(image);
     } else {
-        const month = date.getMonth() + 1;
-        if (datesM[month] === undefined) {
-            datesM[month] = [];
-        }
-        datesM[month].push(image);
-        }
+      const month = date.getMonth() + 1;
+      if (datesM[month] === undefined) {
+        datesM[month] = [];
+      }
+      datesM[month].push(image);
+    }
     if (isThisYear(date)) {
       datesY["This Year"] = datesY["This Year"] || [];
       datesY["This Year"].push(image);
     } else {
-        const year = date.getFullYear();
-        if (datesY[year] === undefined) {
-            datesY[year] = [];
-        }
-        datesY[year].push(image);
-        }
-
+      const year = date.getFullYear();
+      if (datesY[year] === undefined) {
+        datesY[year] = [];
+      }
+      datesY[year].push(image);
+    }
   });
 
   return (
@@ -79,7 +78,6 @@ function Main(props: any) {
             <ShowImages show={"years"} dates={datesY} data={data} />
           </TabPanel>
         </TabPanels>
-
       </Tabs>
     </Container>
   );
