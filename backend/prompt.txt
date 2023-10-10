@@ -1,0 +1,10 @@
+Given the objects in an image, this program will generate a description
+
+Objects: Airplane,Truck,Truck left,Truck left
+Description: Image showing an airplane and truck at the center with two trucks on the left
+--
+Objects: Chair top,Chair top left,Packaged goods
+Description: Image showing Packaged goods at the center with a chair at the top and a chair at the top left
+--
+Objects: Packaged goods,Packaged goods bottom left,Packaged goods bottom right,Packaged goods left,Packaged goods right,Packaged goods right,Packaged goods right,Packaged goods right,Packaged goods right,Packaged goods top right
+Description: 
