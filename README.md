@@ -1,6 +1,6 @@
 # Memor.i.eye
 
-You can find the figma prototype video [here](https://drive.google.com/drive/folders/18BWsGO7xVq2fXZJZuj_EfcXJXkyAHBgC?usp=sharing)
+You can find the case study for this project [here](https://www.shahvirsarkary.com/memor-i-eye)
 
 ## Inspiration
 
